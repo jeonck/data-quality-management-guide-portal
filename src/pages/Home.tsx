@@ -96,6 +96,59 @@ export default function Home() {
             </ul>
           </div>
         </ExpandableCard>
+
+        <ExpandableCard 
+          title="각 단계별 품질관리 점검항목"
+          summary="공공 데이터 품질관리의 각 단계에서 수행해야 할 주요 활동 및 결과물(산출물) 목록을 알아봅니다."
+        >
+          <div className="text-gray-700 space-y-4">
+            <p>문의하신 공공 데이터 품질관리의 단계별 점검항목은 기관의 <strong>정보 생명주기(Life Cycle)</strong>에 따른 계획, 구축, 운영, 활용의 4단계에서 수행해야 할 주요 활동 및 결과물(산출물) 목록을 중심으로 정의될 수 있습니다.</p>
+            <p>제공해주신 자료에서는 각 단계별 "산출물 점검 및 최신성 확보 대상" 목록을 명시하고 있으며, 이 산출물들은 해당 단계에서 품질 관리가 제대로 이루어졌는지 확인하는 핵심적인 점검 항목이 됩니다.</p>
+            <p>다음은 각 단계별 주요 품질관리 활동과 핵심 점검 항목(산출물)입니다.</p>
+
+            <div>
+              <h4 className="text-lg font-semibold">1. 계획단계 품질관리</h4>
+              <ul className="list-disc list-inside">
+                <li>데이터 품질관리 계획서</li>
+                <li>품질관리 인프라 구축·운영 계획 (선택적)</li>
+              </ul>
+            </div>
+            <div>
+              <h4 className="text-lg font-semibold">2. 구축단계 품질관리</h4>
+              <ul className="list-disc list-inside">
+                <li>용어 정의서, 단어 정의서</li>
+                <li>코드 정의서, 도메인 정의서</li>
+                <li>엔터티 정의서, 속성 정의서</li>
+                <li>논리 데이터모델 다이어그램 (논리ERD)</li>
+                <li>테이블 정의서, 컬럼 정의서</li>
+                <li>물리 데이터모델 다이어그램 (물리ERD)</li>
+                <li>데이터베이스(DB) 정의서</li>
+                <li>연계 데이터 목록, 오너십 정의서</li>
+                <li>업무규칙 정의서, 테이블 대 응용 프로그램 상관도</li>
+              </ul>
+            </div>
+            <div>
+              <h4 className="text-lg font-semibold">3. 운영단계 품질관리</h4>
+              <ul className="list-disc list-inside">
+                <li>품질 이슈 목록, 요구사항 목록</li>
+                <li>품질 현황 분석서, 품질 진단 계획서</li>
+                <li>업무규칙 진단 보고서</li>
+                <li>값·구조·표준화 진단 결과서</li>
+                <li>오류 유형 및 원인 분석 결과서</li>
+                <li>품질 개선 계획서</li>
+                <li>품질 개선 결과보고서</li>
+              </ul>
+            </div>
+            <div>
+              <h4 className="text-lg font-semibold">4. 활용단계 품질관리</h4>
+              <ul className="list-disc list-inside">
+                <li>데이터 품질 오류 신고서</li>
+                <li>데이터 오류 신고 및 처리 대장</li>
+              </ul>
+            </div>
+            <p className="mt-4">이러한 단계별 점검항목(산출물)을 통해 공공기관은 데이터의 기획 단계부터 최종 사용자에게 제공되고 피드백을 받는 전 과정에 걸쳐 데이터 품질의 일관성과 신뢰성을 유지하고 개선할 수 있습니다. 각 단계별 산출물은 다음 단계의 활동을 위한 입력 자료로 활용되므로, 산출물의 적시성과 정확성 자체가 중요한 점검 대상이 됩니다.</p>
+          </div>
+        </ExpandableCard>
       </div>
     </div>
   );
