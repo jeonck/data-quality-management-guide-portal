@@ -19,29 +19,46 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-white dark:bg-gray-800 shadow-lg">
-      <div className="container mx-auto px-4">
+    <nav className="bg-white/80 dark:bg-gray-900/80 backdrop-blur-md shadow-soft-lg sticky top-0 z-50 border-b border-gray-200 dark:border-gray-700">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           <div className="flex-shrink-0">
-            <Link to="/" className="text-2xl font-bold text-gray-800 dark:text-white">
-              <span className="text-blue-600">데이터 품질관리</span> 가이드
+            <Link to="/" className="text-2xl font-bold text-gray-900 dark:text-white hover:opacity-80 transition-opacity flex items-center gap-2">
+              <span className="text-3xl">📊</span>
+              <span>
+                <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">데이터 품질관리</span>
+                <span className="text-gray-700 dark:text-gray-300"> 가이드</span>
+              </span>
             </Link>
           </div>
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex items-center space-x-8">
-            <NavLink to="/">Home</NavLink>
-            <NavLink to="/about">About</NavLink>
-            <button onClick={handleThemeSwitch} className="p-2 rounded-md text-gray-800 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none">
-              {theme === 'dark' ? '☀️' : '🌙'}
+          <div className="hidden md:flex items-center space-x-4">
+            <NavLink to="/">홈</NavLink>
+            <NavLink to="/about">소개</NavLink>
+            <button
+              onClick={handleThemeSwitch}
+              className="p-2 rounded-lg text-gray-700 dark:text-gray-200 hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 dark:hover:from-blue-900/30 dark:hover:to-purple-900/30 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-all"
+              aria-label={theme === 'dark' ? '라이트 모드로 전환' : '다크 모드로 전환'}
+            >
+              <span className="text-xl">{theme === 'dark' ? '☀️' : '🌙'}</span>
             </button>
           </div>
 
           {/* Mobile menu button */}
-          <div className="md:hidden flex items-center">
+          <div className="md:hidden flex items-center gap-2">
+            <button
+              onClick={handleThemeSwitch}
+              className="p-2 rounded-lg text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none"
+              aria-label={theme === 'dark' ? '라이트 모드로 전환' : '다크 모드로 전환'}
+            >
+              <span className="text-xl">{theme === 'dark' ? '☀️' : '🌙'}</span>
+            </button>
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="inline-flex items-center justify-center p-2 rounded-md text-gray-800 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none"
+              className="inline-flex items-center justify-center p-2 rounded-lg text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              aria-label={isOpen ? '메뉴 닫기' : '메뉴 열기'}
+              aria-expanded={isOpen}
             >
               <svg className="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
                 {isOpen ? (
@@ -57,13 +74,10 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden bg-white dark:bg-gray-800 border-t border-gray-200 dark:border-gray-700">
-          <div className="px-2 pt-2 pb-3 space-y-1">
-            <MobileNavLink to="/" onClick={() => setIsOpen(false)}>Home</MobileNavLink>
-            <MobileNavLink to="/about" onClick={() => setIsOpen(false)}>About</MobileNavLink>
-            <button onClick={handleThemeSwitch} className="w-full text-left block px-3 py-2 rounded-md text-base font-medium text-gray-800 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700">
-              {theme === 'dark' ? 'Switch to Light Mode' : 'Switch to Dark Mode'}
-            </button>
+        <div className="md:hidden bg-white/95 dark:bg-gray-900/95 backdrop-blur-md border-t border-gray-200 dark:border-gray-700 animate-fadeIn">
+          <div className="px-4 pt-2 pb-4 space-y-2">
+            <MobileNavLink to="/" onClick={() => setIsOpen(false)}>홈</MobileNavLink>
+            <MobileNavLink to="/about" onClick={() => setIsOpen(false)}>소개</MobileNavLink>
           </div>
         </div>
       )}
@@ -74,7 +88,7 @@ const Navbar = () => {
 const NavLink = ({ to, children }: { to: string; children: React.ReactNode }) => (
   <Link
     to={to}
-    className="px-3 py-2 rounded-md text-base font-medium text-gray-700 dark:text-gray-200 hover:text-blue-600 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
+    className="px-4 py-2 rounded-lg text-base font-medium text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 dark:hover:from-blue-900/30 dark:hover:to-purple-900/30 transition-all duration-200"
   >
     {children}
   </Link>
@@ -84,7 +98,7 @@ const MobileNavLink = ({ to, children, onClick }: { to: string; children: React.
   <Link
     to={to}
     onClick={onClick}
-    className="block px-3 py-2 rounded-md text-base font-medium text-gray-800 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700"
+    className="block px-4 py-3 rounded-lg text-base font-medium text-gray-800 dark:text-gray-200 hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 dark:hover:from-blue-900/30 dark:hover:to-purple-900/30 transition-all duration-200"
   >
     {children}
   </Link>
