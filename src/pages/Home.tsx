@@ -155,31 +155,70 @@ export default function Home() {
                   <tr>
                     <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">1. 진단 대상 정의 (Define)</td>
                     <td className="px-6 py-4 text-sm text-gray-500">품질 진단 대상 데이터베이스를 선정하고, 진단 계획을 공식화.</td>
-                    <td className="px-6 py-4 text-sm text-gray-500">품질관리 계획 검토. 진단 수요 분석 (오류 신고, 개선 수요). 중요성 및 시급성 측면에서 진단 대상 DB 최종 선정. 진단 방향 설정 (Inside-Out 또는 Outside-In).</td>
+                    <td className="px-6 py-4 text-sm text-gray-500">
+                      <ul className="list-disc list-inside space-y-1">
+                        <li>품질관리 계획 검토.</li>
+                        <li>진단 수요 분석 (오류 신고, 개선 수요).</li>
+                        <li>중요성 및 시급성 측면에서 진단 대상 DB 최종 선정.</li>
+                        <li>진단 방향 설정 (Inside-Out 또는 Outside-In).</li>
+                      </ul>
+                    </td>
                   </tr>
                   <tr>
                     <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">2. 품질 진단 실시 (Measure)</td>
                     <td className="px-6 py-4 text-sm text-gray-500">정의된 진단 기법(프로파일링, 업무규칙 진단 등)을 적용하여 데이터 품질을 측정.</td>
-                    <td className="px-6 py-4 text-sm text-gray-500">진단 환경 준비 (인력, 권한, 산출물). 값, 구조 진단 (프로파일링) 실시 (컬럼 분석, 패턴 분석 등). 업무규칙 진단 실시 (법, 규정 등 근거 규정 기반 스크립트 작성 및 측정). 품질관리 수준 진단 실시 (체크리스트 기반 관리 체계 점검).</td>
+                    <td className="px-6 py-4 text-sm text-gray-500">
+                      <ul className="list-disc list-inside space-y-1">
+                        <li>진단 환경 준비 (인력, 권한, 산출물).</li>
+                        <li>값, 구조 진단 (프로파일링) 실시 (컬럼 분석, 패턴 분석 등).</li>
+                        <li>업무규칙 진단 실시 (법, 규정 등 근거 규정 기반 스크립트 작성 및 측정).</li>
+                        <li>품질관리 수준 진단 실시 (체크리스트 기반 관리 체계 점검).</li>
+                      </ul>
+                    </td>
                   </tr>
                   <tr>
                     <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">3. 진단 결과 분석 (Analyze)</td>
                     <td className="px-6 py-4 text-sm text-gray-500">측정된 오류의 <strong>근본 원인(Root Cause)</strong>을 파악하고, 업무에 미치는 영향을 분석하여 개선 기회 도출.</td>
-                    <td className="px-6 py-4 text-sm text-gray-500">오류 원인 분석 (관리체계, 표준, 구조, 응용프로그램 관점 추적). 업무 영향 분석 (정성적/정량적 파급 효과 추정). 오류를 제거하기 위한 개선 기회 도출 (관리체계, 표준, 업무, 값 관점).</td>
+                    <td className="px-6 py-4 text-sm text-gray-500">
+                      <ul className="list-disc list-inside space-y-1">
+                        <li>오류 원인 분석 (관리체계, 표준, 구조, 응용프로그램 관점 추적).</li>
+                        <li>업무 영향 분석 (정성적/정량적 파급 효과 추정).</li>
+                        <li>오류를 제거하기 위한 개선 기회 도출 (관리체계, 표준, 업무, 값 관점).</li>
+                      </ul>
+                    </td>
                   </tr>
                   <tr>
                     <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">4. 개선 계획 수립 (Improvement Plan)</td>
-                    <td className="px-6 py-4 text-sm text-gray-500">개선 과제를 구체화하고, 시급성 및 중요도에 따른 우선순위를 설정하여 사업 추진 계획을 수립.</td>
+                    <td className="px-6 py-4 text-sm text-gray-500">
+                      <ul className="list-disc list-inside space-y-1">
+                        <li>개선 과제 정의 및 우선순위 선정 (시급성 및 중요도 고려).</li>
+                        <li>개선 목표 및 성과평가지표(KPI) 설정.</li>
+                        <li>개선 전략 수립 (데이터 중심/프로세스 중심).</li>
+                        <li>품질개선 추진계획서 작성 (범위, 일정, 예산, 기대 효과 포함).</li>
+                      </ul>
+                    </td>
                     <td className="px-6 py-4 text-sm text-gray-500">개선 과제 정의 및 우선순위 선정 (시급성 및 중요도 고려). 개선 목표 및 성과평가지표(KPI) 설정. 개선 전략 수립 (데이터 중심/프로세스 중심). 품질개선 추진계획서 작성 (범위, 일정, 예산, 기대 효과 포함).</td>
                   </tr>
                   <tr>
                     <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">5. 개선 수행 (Implement)</td>
-                    <td className="px-6 py-4 text-sm text-gray-500">수립된 계획에 따라 품질 관리체계 수립, 표준화 수립, 데이터 보정 등 실제 개선 활동 수행.</td>
+                    <td className="px-6 py-4 text-sm text-gray-500">
+                      <ul className="list-disc list-inside space-y-1">
+                        <li>개선 환경 준비 및 협조 체계 구성 (특히 외부 기관 연계 시).</li>
+                        <li>품질개선 수행 (데이터 보정, 데이터베이스 구조 보정, 응용 프로그램 수정).</li>
+                        <li>보정 작업 시 롤백/리스토어를 위한 백업 및 이력 관리.</li>
+                      </ul>
+                    </td>
                     <td className="px-6 py-4 text-sm text-gray-500">개선 환경 준비 및 협조 체계 구성 (특히 외부 기관 연계 시). 품질개선 수행 (데이터 보정, 데이터베이스 구조 보정, 응용 프로그램 수정). 보정 작업 시 롤백/리스토어를 위한 백업 및 이력 관리.</td>
                   </tr>
                   <tr>
                     <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">6. 품질 통제 (Control)</td>
-                    <td className="px-6 py-4 text-sm text-gray-500">개선 사업의 효과를 평가하고, 개선된 품질 수준을 유지 및 재발 방지를 위한 통제 활동 수행.</td>
+                    <td className="px-6 py-4 text-sm text-gray-500">
+                      <ul className="list-disc list-inside space-y-1">
+                        <li>결과 평가 (개선 전/후 비교 및 비용 편익 분석을 통한 효과 정량적 평가).</li>
+                        <li>품질 목표 관리 (품질 관리체계, 표준화, 데이터 보정 영역별 목표 설정 및 주기적 확인).</li>
+                        <li>품질 통제 실시 (상시 모니터링, 오류 신고 접수/처리, 교육 및 변화관리 활동).</li>
+                      </ul>
+                    </td>
                     <td className="px-6 py-4 text-sm text-gray-500">결과 평가 (개선 전/후 비교 및 비용 편익 분석을 통한 효과 정량적 평가). 품질 목표 관리 (품질 관리체계, 표준화, 데이터 보정 영역별 목표 설정 및 주기적 확인). 품질 통제 실시 (상시 모니터링, 오류 신고 접수/처리, 교육 및 변화관리 활동).</td>
                   </tr>
                 </tbody>
