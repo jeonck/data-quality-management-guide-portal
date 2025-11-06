@@ -35,9 +35,82 @@ export default function About() {
           </div>
         </div>
 
+        <div className="card-elevated p-8 border-l-4 border-blue-500">
+          <h2 className="text-3xl font-bold mb-6 flex items-center gap-3">
+            <span className="text-3xl">🛠️</span>
+            <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Tech Stack</span>
+          </h2>
+          <ul className="space-y-4 text-gray-600">
+            <li className="flex items-start gap-4 p-3 rounded-lg hover:bg-gray-50 transition-colors">
+              <span className="text-3xl flex-shrink-0">⚛️</span>
+              <div>
+                <strong className="text-lg text-gray-900">React 18</strong>
+                <p className="text-sm mt-1">Modern React with hooks and concurrent features</p>
+              </div>
+            </li>
+            <li className="flex items-start gap-4 p-3 rounded-lg hover:bg-gray-50 transition-colors">
+              <span className="text-3xl flex-shrink-0">⚡</span>
+              <div>
+                <strong className="text-lg text-gray-900">Vite</strong>
+                <p className="text-sm mt-1">Next generation frontend tooling</p>
+              </div>
+            </li>
+            <li className="flex items-start gap-4 p-3 rounded-lg hover:bg-gray-50 transition-colors">
+              <span className="text-3xl flex-shrink-0">📘</span>
+              <div>
+                <strong className="text-lg text-gray-900">TypeScript</strong>
+                <p className="text-sm mt-1">Type safety and better developer experience</p>
+              </div>
+            </li>
+            <li className="flex items-start gap-4 p-3 rounded-lg hover:bg-gray-50 transition-colors">
+              <span className="text-3xl flex-shrink-0">🎨</span>
+              <div>
+                <strong className="text-lg text-gray-900">Tailwind CSS</strong>
+                <p className="text-sm mt-1">Utility-first CSS framework</p>
+              </div>
+            </li>
+            <li className="flex items-start gap-4 p-3 rounded-lg hover:bg-gray-50 transition-colors">
+              <span className="text-3xl flex-shrink-0">🚦</span>
+              <div>
+                <strong className="text-lg text-gray-900">React Router</strong>
+                <p className="text-sm mt-1">Client-side routing</p>
+              </div>
+            </li>
+          </ul>
+        </div>
 
-
-
+        <div className="card-elevated p-8 border-l-4 border-purple-500 bg-gradient-to-br from-purple-50/50 to-blue-50/50">
+          <h2 className="text-3xl font-bold mb-6 flex items-center gap-3">
+            <span className="text-3xl">✨</span>
+            <span className="bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">Features</span>
+          </h2>
+          <div className="grid md:grid-cols-2 gap-4">
+            <div className="flex items-center gap-3 p-3 rounded-lg bg-white shadow-sm">
+              <span className="text-2xl">⚡</span>
+              <span className="text-gray-700">Fast development with HMR</span>
+            </div>
+            <div className="flex items-center gap-3 p-3 rounded-lg bg-white shadow-sm">
+              <span className="text-2xl">🔒</span>
+              <span className="text-gray-700">Type-safe code with TypeScript</span>
+            </div>
+            <div className="flex items-center gap-3 p-3 rounded-lg bg-white shadow-sm">
+              <span className="text-2xl">🎨</span>
+              <span className="text-gray-700">Modern UI with Tailwind CSS</span>
+            </div>
+            <div className="flex items-center gap-3 p-3 rounded-lg bg-white shadow-sm">
+              <span className="text-2xl">🚀</span>
+              <span className="text-gray-700">Optimized production builds</span>
+            </div>
+            <div className="flex items-center gap-3 p-3 rounded-lg bg-white shadow-sm">
+              <span className="text-2xl">🌐</span>
+              <span className="text-gray-700">Client-side routing</span>
+            </div>
+            <div className="flex items-center gap-3 p-3 rounded-lg bg-white shadow-sm">
+              <span className="text-2xl">📦</span>
+              <span className="text-gray-700">GitHub Pages ready</span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
