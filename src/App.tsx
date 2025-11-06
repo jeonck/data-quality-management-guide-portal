@@ -2,6 +2,13 @@ import { HashRouter as Router, Routes, Route, Navigate } from 'react-router-dom'
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import About from './pages/About';
+import ReadinessDetail from './pages/ReadinessDetail';
+import CompletenessDetail from './pages/CompletenessDetail';
+import ConsistencyDetail from './pages/ConsistencyDetail';
+import AccuracyDetail from './pages/AccuracyDetail';
+import SecurityDetail from './pages/SecurityDetail';
+import TimelinessDetail from './pages/TimelinessDetail';
+import UsabilityDetail from './pages/UsabilityDetail';
 
 function App() {
   return (
@@ -12,6 +19,13 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
+            <Route path="/diagnosis/readiness" element={<ReadinessDetail />} />
+            <Route path="/diagnosis/completeness" element={<CompletenessDetail />} />
+            <Route path="/diagnosis/consistency" element={<ConsistencyDetail />} />
+            <Route path="/diagnosis/accuracy" element={<AccuracyDetail />} />
+            <Route path="/diagnosis/security" element={<SecurityDetail />} />
+            <Route path="/diagnosis/timeliness" element={<TimelinessDetail />} />
+            <Route path="/diagnosis/usability" element={<UsabilityDetail />} />
             <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
         </main>

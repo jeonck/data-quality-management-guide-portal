@@ -1,4 +1,5 @@
 import TabNavigation, { TabItem } from '../components/TabNavigation';
+import { Link } from 'react-router-dom';
 
 export default function Home() {
   const tabs: TabItem[] = [
@@ -124,11 +125,11 @@ export default function Home() {
       icon: '🔧',
       accentColor: 'blue',
       content: (
-        <div className="text-gray-700 dark:text-gray-300 space-y-4">
-          <p>데이터 품질 진단 및 개선 활동은 운영단계 품질관리의 핵심 요소이며, 총 6단계의 체계적인 절차로 구성되어 있습니다.</p>
+        <div className="text-gray-700 space-y-4">
+          <p>데이터 품질 진단 및 개선 활동은 운영단계 품질관리의 핵심 요소이며, 총 6단계의 체계적인 절차로 구성되어 있습니다. 또한, 공공기관 데이터의 품질 수준을 측정하기 위한 7대 품질 지표를 정의하고 있으며, 각 지표별 실용적 예시를 통해 상세 내용을 확인할 수 있습니다.</p>
 
           <div className="grid md:grid-cols-2 gap-6">
-            <div className="p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg">
+            <div className="p-4 bg-blue-50 rounded-lg">
               <h4 className="text-lg font-semibold mb-3">I. 품질 진단 단계</h4>
               <ol className="list-decimal list-inside text-sm space-y-1">
                 <li>진단 대상 정의</li>
@@ -137,7 +138,7 @@ export default function Home() {
               </ol>
             </div>
 
-            <div className="p-4 bg-purple-50 dark:bg-purple-900/20 rounded-lg">
+            <div className="p-4 bg-purple-50 rounded-lg">
               <h4 className="text-lg font-semibold mb-3">II. 품질 개선 단계</h4>
               <ol className="list-decimal list-inside text-sm space-y-1" start={4}>
                 <li>개선 계획 수립</li>
@@ -145,6 +146,52 @@ export default function Home() {
                 <li>품질 통제</li>
               </ol>
             </div>
+          </div>
+
+          <h3 className="text-2xl font-bold mt-8 mb-4">7대 데이터 품질 지표</h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <Link to="/diagnosis/readiness" className="card-elevated p-4 border-l-4 border-blue-500 hover:shadow-lg transition-shadow duration-300">
+              <div className="flex items-center gap-3">
+                <span className="text-2xl">📝</span>
+                <span className="text-lg font-bold text-gray-900">1. 준비성</span>
+              </div>
+            </Link>
+            <Link to="/diagnosis/completeness" className="card-elevated p-4 border-l-4 border-purple-500 hover:shadow-lg transition-shadow duration-300">
+              <div className="flex items-center gap-3">
+                <span className="text-2xl">✅</span>
+                <span className="text-lg font-bold text-gray-900">2. 완전성</span>
+              </div>
+            </Link>
+            <Link to="/diagnosis/consistency" className="card-elevated p-4 border-l-4 border-green-500 hover:shadow-lg transition-shadow duration-300">
+              <div className="flex items-center gap-3">
+                <span className="text-2xl">🔄</span>
+                <span className="text-lg font-bold text-gray-900">3. 일관성</span>
+              </div>
+            </Link>
+            <Link to="/diagnosis/accuracy" className="card-elevated p-4 border-l-4 border-orange-500 hover:shadow-lg transition-shadow duration-300">
+              <div className="flex items-center gap-3">
+                <span className="text-2xl">🎯</span>
+                <span className="text-lg font-bold text-gray-900">4. 정확성</span>
+              </div>
+            </Link>
+            <Link to="/diagnosis/security" className="card-elevated p-4 border-l-4 border-blue-500 hover:shadow-lg transition-shadow duration-300">
+              <div className="flex items-center gap-3">
+                <span className="text-2xl">🔒</span>
+                <span className="text-lg font-bold text-gray-900">5. 보안성</span>
+              </div>
+            </Link>
+            <Link to="/diagnosis/timeliness" className="card-elevated p-4 border-l-4 border-purple-500 hover:shadow-lg transition-shadow duration-300">
+              <div className="flex items-center gap-3">
+                <span className="text-2xl">⏱️</span>
+                <span className="text-lg font-bold text-gray-900">6. 적시성</span>
+              </div>
+            </Link>
+            <Link to="/diagnosis/usability" className="card-elevated p-4 border-l-4 border-green-500 hover:shadow-lg transition-shadow duration-300">
+              <div className="flex items-center gap-3">
+                <span className="text-2xl">💡</span>
+                <span className="text-lg font-bold text-gray-900">7. 유용성</span>
+              </div>
+            </Link>
           </div>
         </div>
       ),

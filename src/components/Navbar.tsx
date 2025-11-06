@@ -23,7 +23,7 @@ const Navbar = () => {
           <div className="hidden md:flex items-center space-x-4">
             <NavLink to="/">홈</NavLink>
             <NavLink to="/about">소개</NavLink>
-
+            <NavLink to="/#diagnosis">진단 및 개선</NavLink>
           </div>
 
           {/* Mobile menu button */}
@@ -53,6 +53,7 @@ const Navbar = () => {
           <div className="px-4 pt-2 pb-4 space-y-2">
             <MobileNavLink to="/" onClick={() => setIsOpen(false)}>홈</MobileNavLink>
             <MobileNavLink to="/about" onClick={() => setIsOpen(false)}>소개</MobileNavLink>
+            <MobileNavLink to="/#diagnosis" onClick={() => setIsOpen(false)}>진단 및 개선</MobileNavLink>
           </div>
         </div>
       )}
