@@ -2,7 +2,6 @@ import { HashRouter as Router, Routes, Route, Navigate } from 'react-router-dom'
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import About from './pages/About';
-import Diagnosis from './pages/Diagnosis';
 
 function App() {
   return (
@@ -13,7 +12,6 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
-            <Route path="/diagnosis" element={<Diagnosis />} />
             <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
         </main>
