@@ -69,7 +69,25 @@ export default function Home() {
                   <tr>
                     <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">3. 운영단계 (Operation)</td>
                     <td className="px-6 py-4 text-sm text-gray-500">데이터의 품질 수준 향상 및 품질 이슈 해결을 위한 선택/집중형 활동 수행. (주요 활동: 품질 진단 및 개선 6단계).</td>
-                    <td className="px-6 py-4 text-sm text-gray-500">진단 및 분석 결과: 품질 이슈 목록. 값/구조/표준화 진단 결과서. 업무규칙 진단 보고서. 오류 유형 및 원인 분석 결과서. 개선 활동 결과: 품질 개선 계획서. 품질 개선 결과보고서. 데이터 산출물의 정기적 점검 및 최신성 확보 여부.</td>
+                    <td className="px-6 py-4 text-sm text-gray-500">
+                      <ul className="list-disc list-inside space-y-1">
+                        <li>진단 및 분석 결과:
+                          <ul className="list-circle list-inside ml-4">
+                            <li>품질 이슈 목록</li>
+                            <li>값/구조/표준화 진단 결과서</li>
+                            <li>업무규칙 진단 보고서</li>
+                            <li>오류 유형 및 원인 분석 결과서</li>
+                          </ul>
+                        </li>
+                        <li>개선 활동 결과:
+                          <ul className="list-circle list-inside ml-4">
+                            <li>품질 개선 계획서</li>
+                            <li>품질 개선 결과보고서</li>
+                          </ul>
+                        </li>
+                        <li>데이터 산출물의 정기적 점검 및 최신성 확보 여부</li>
+                      </ul>
+                    </td>
                     <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500"></td>
                   </tr>
                   <tr>
