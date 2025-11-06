@@ -267,6 +267,155 @@ export default function Home() {
             </div>
           </div>
         </ExpandableCard>
+
+        <ExpandableCard 
+          title="정보시스템 감리사 측면에서의 데이터 품질관리 점검 포인트"
+          summary="정보시스템 감리사의 입장에서 공공 데이터 품질관리를 점검하기 위한 체계와 핵심 점검 내용을 알아봅니다."
+        >
+          <div className="text-gray-700 space-y-4">
+            <p>정보시스템 감리사(감리업자)의 입장에서 공공 데이터 품질관리를 점검하려면, 기관이 데이터 품질을 확보하기 위해 수립한 <strong>기반 체계(정책, 조직, 표준화, 인프라)</strong>와 <strong>정보 생애주기(계획, 구축, 운영, 활용)</strong>에 따른 활동의 적절한 이행 여부 및 산출물 충실도를 중심으로 진행해야 합니다.</p>
+            <p>제공하신 매뉴얼 자료에서도 정보화 사업에 참여하는 감리자는 데이터 구축 및 운영 단계에서 중요하게 고려해야 할 사항을 본 매뉴얼을 통해 파악할 수 있도록 안내하고 있습니다.</p>
+            
+            <h4 className="text-lg font-bold mt-6 mb-2">비유적 설명: 건물의 안전 진단과 같은 데이터 품질관리 감리</h4>
+            <p className="mb-6">정보시스템 감리사가 데이터 품질관리를 점검하는 것은 건물의 안전 진단과 같습니다. 건물을 짓기 전에 설계도(정책 및 표준)가 제대로 작성되었는지 확인하고(계획/구축), 건물이 사용되는 동안 구조적 결함(값 오류)이 발생했을 때 그 원인을 파악하여(운영/진단), 근본적인 보수 계획(개선 계획)을 수립하고 실행하며, 사용자들의 불편 신고(오류 신고)를 꾸준히 접수하고 처리하는지(활용) 전 과정을 면밀히 살피는 것입니다. 감리사는 단순히 외관이 깨끗한지 확인하는 것이 아니라, 건물의 기초 설계와 유지 관리 절차 자체가 법규와 기준(품질 지표)에 맞게 작동하는지 확인합니다.</p>
+
+            <p className="mb-4">다음은 감리사가 데이터 품질관리를 점검하기 위한 체계와 핵심 점검 내용입니다.</p>
+
+            <h4 className="text-lg font-semibold mt-6 mb-2">Ⅰ. 품질관리 기반 체계 점검 (DQM Governance)</h4>
+            <p className="mb-4">데이터 품질관리 활동이 지속 가능하고 효율적으로 이루어지기 위해서는 조직적, 정책적, 기술적 기반이 견고해야 합니다.</p>
+            <div className="overflow-x-auto mb-4">
+              <table className="min-w-full divide-y divide-gray-200">
+                <thead className="bg-gray-50">
+                  <tr>
+                    <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">구분</th>
+                    <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">주요 점검 영역</th>
+                    <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">핵심 점검 내용 (Checkpoints)</th>
+                    <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">근거</th>
+                  </tr>
+                </thead>
+                <tbody className="bg-white divide-y divide-gray-200">
+                  <tr>
+                    <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">1. 정책 및 규정 (Policy)</td>
+                    <td className="px-6 py-4 text-sm text-gray-500">품질관리 정책의 공식화 및 일관성 확보</td>
+                    <td className="px-6 py-4 text-sm text-gray-500">
+                      <ul className="list-disc list-inside space-y-1">
+                        <li>기관 차원의 데이터 품질관리 정책/규정(지침)이 수립되었는지 확인.</li>
+                        <li>규정 내용에 품질관리 목적, 목표, 적용 범위와 대상, 조직, 역할/책임, 기준, 절차, 활동 등이 포함되었는지 확인.</li>
+                        <li>국가 차원의 정보화 정책 및 데이터 품질관리 정책과 일관성을 갖는지 확인.</li>
+                      </ul>
+                    </td>
+                    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500"></td>
+                  </tr>
+                  <tr>
+                    <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">2. 조직 및 역할 (Organization)</td>
+                    <td className="px-6 py-4 text-sm text-gray-500">품질관리 조직의 구성 및 책임 정의</td>
+                    <td className="px-6 py-4 text-sm text-gray-500">
+                      <ul className="list-disc list-inside space-y-1">
+                        <li>공공데이터제공책임관 및 실무담당자가 임명되었는지 확인.</li>
+                        <li>품질관리 담당자 및 오류신고 담당자가 최소한 지정되어 운영되는지 확인.</li>
+                        <li><strong>데이터 오너십(Ownership)</strong>과 <strong>스튜어드십(Stewardship)</strong>의 역할과 책임이 정의되어 있는지 확인 (운영 단계 전반의 효율적 관리를 위함).</li>
+                      </ul>
+                    </td>
+                    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500"></td>
+                  </tr>
+                  <tr>
+                    <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">3. 표준화 기반 (Standardization)</td>
+                    <td className="px-6 py-4 text-sm text-gray-500">표준 요소의 정의 및 관리 체계</td>
+                    <td className="px-6 py-4 text-sm text-gray-500">
+                      <ul className="list-disc list-inside space-y-1">
+                        <li>기관 차원의 <strong>데이터 표준(용어, 단어, 도메인, 코드, 명명규칙)</strong>이 정의되어 있는지 확인.</li>
+                        <li>표준화 준수 여부를 주기적으로 점검하고, 국가 차원의 공통표준 및 행정표준코드를 우선적으로 적용했는지 확인.</li>
+                      </ul>
+                    </td>
+                    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500"></td>
+                  </tr>
+                  <tr>
+                    <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">4. 인프라 (Infrastructure)</td>
+                    <td className="px-6 py-4 text-sm text-gray-500">품질관리 활동 지원 도구 및 시스템</td>
+                    <td className="px-6 py-4 text-sm text-gray-500">
+                      <ul className="list-disc list-inside space-y-1">
+                        <li>품질관리 활동을 지원하는 인프라 구축 및 운영 계획이 수립되었는지 확인.</li>
+                        <li>인프라가 프로파일링, 품질 데이터 관리, 품질 진단/분석, 메타데이터 관리 등의 핵심 기능을 충족하는지 검토.</li>
+                      </ul>
+                    </td>
+                    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500"></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <h4 className="text-lg font-semibold mt-6 mb-2">Ⅱ. 정보 생애주기별 품질관리 활동 점검</h4>
+            <p>품질관리 활동은 정보 생명주기(계획, 구축, 운영, 활용)에 기반하여 4단계로 구성되며, 감리사는 각 단계별로 수행해야 할 주요 활동의 실행 여부와 산출물의 충실성/최신성을 검증해야 합니다.</p>
+            <div className="overflow-x-auto mb-4">
+              <table className="min-w-full divide-y divide-gray-200">
+                <thead className="bg-gray-50">
+                  <tr>
+                    <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">단계</th>
+                    <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">주요 목표</th>
+                    <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">핵심 점검 항목</th>
+                  </tr>
+                </thead>
+                <tbody className="bg-white divide-y divide-gray-200">
+                  <tr>
+                    <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">1. 계획단계 점검 (Planning Stage)</td>
+                    <td className="px-6 py-4 text-sm text-gray-500">연간 품질관리 계획 수립.</td>
+                    <td className="px-6 py-4 text-sm text-gray-500">
+                      <ul className="list-disc list-inside space-y-1">
+                        <li>데이터 품질관리 계획서의 작성 및 승인 여부.</li>
+                        <li>중점 품질관리 대상 데이터베이스 선정 기준(핵심 임무, 대외 공개, 품질 이슈 등)의 적절성 및 선정 결과.</li>
+                        <li>품질 진단 및 개선 계획이 별도로 분리되어(권고) 구체적인 범위와 예산이 수립되었는지.</li>
+                        <li>신규/고도화 DB를 포함한 표준화 적용 계획 및 연계 데이터 품질 확보 계획 포함 여부.</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">2. 구축단계 점검 (Building Stage)</td>
+                    <td className="px-6 py-4 text-sm text-gray-500">사전 예방적 품질관리 및 운영 단계 입력 자료 확보.</td>
+                    <td className="px-6 py-4 text-sm text-gray-500">
+                      <ul className="list-disc list-inside space-y-1">
+                        <li>데이터 표준화 준수: 데이터베이스 구축 시 코드, 용어, 도메인 표준이 설계에 적용되고 점검되었는지 확인.</li>
+                        <li>데이터 구조 및 입력 방지: 데이터 모델 설계 시 정규화 원칙이 준수되고, 중요 데이터의 입력 시점부터 오류 데이터 유입 방지를 위한 검증 기능이 강화되었는지 확인.</li>
+                        <li>산출물 관리 및 현행화: 구축 단계에서 정의된 품질관리 대상 산출물 목록(용어 정의서, 논리/물리 ERD, 테이블 정의서, 컬럼 정의서, 오너십 정의서, 업무규칙 정의서, 테이블 대 응용 프로그램 상관도 등)이 작성, 검증, 그리고 최신성을 확보했는지 점검.</li>
+                        <li>연계 데이터 정합성: 연계 데이터의 표준화된 관리 및 최신성 확보를 통해 연계 데이터의 정합성을 확보했는지 확인.</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">3. 운영단계 점검 (Operation Stage)</td>
+                    <td className="px-6 py-4 text-sm text-gray-500">데이터 품질 진단 및 개선 활동의 체계적인 수행.</td>
+                    <td className="px-6 py-4 text-sm text-gray-500">
+                      <ul className="list-disc list-inside space-y-1">
+                        <li>품질 진단 및 개선 6단계 절차 이행 여부:
+                          <ul className="list-circle list-inside ml-4">
+                            <li>진단대상 정의: 품질 이슈 수요(오류 신고 내역 등)를 반영하여 진단 대상 DB가 선정되었는지 확인.</li>
+                            <li>품질진단 실시: 7대 품질 지표(완전성, 일관성, 정확성, 준비성, 보안성, 적시성, 유용성)를 기준으로 프로파일링(값/구조 진단), 업무규칙 진단, 체크리스트 등의 진단 방법을 적용했는지 확인.</li>
+                            <li>진단결과 분석: 도출된 오류의 <strong>근본 원인(Root Cause)</strong>을 파악하고, 업무에 미치는 영향을 분석하여 개선 기회 도출. (산출물: 오류 유형 및 원인 분석 결과서).</li>
+                            <li>개선계획 수립: 개선 과제 정의 및 우선순위 설정 시 시급성/중요도가 반영되었는지. 개선 목표와 <strong>성과평가지표(KPI)</strong>가 정의되었는지 확인.</li>
+                            <li>개선 수행: 데이터 보정(Script 방식 보정 포함), 표준화 수립, 품질 관리체계 수립 등의 개선 활동이 실행되었는지. 특히 대규모 데이터 보정 시 백업/복원 절차 및 이력 관리를 준수했는지 확인.</li>
+                            <li>품질 통제: 개선 전/후를 비교하는 결과 평가를 수행하고, 품질 이슈 재발 방지를 위한 상시 모니터링 및 <strong>변화관리 활동(교육)</strong>이 계획되고 실행되었는지. (산출물: 품질 개선 결과보고서).</li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">4. 활용단계 점검 (Utilization Stage)</td>
+                    <td className="px-6 py-4 text-sm text-gray-500">사용자 피드백 반영 및 선순환 관리 체계 확립.</td>
+                    <td className="px-6 py-4 text-sm text-gray-500">
+                      <ul className="list-disc list-inside space-y-1">
+                        <li>품질 오류 신고 관리: 데이터를 이용하는 외부 이해관계자(국민, 유관기관)로부터 품질 오류 신고를 접수받고 처리하는 체계(담당자 및 절차)가 마련되었는지 확인.</li>
+                        <li>오류 처리 결과 통지: 신고 내용에 대해 확인, 조치, 개선 결과 통지의 일련의 과정이 수행되었는지, 그 내역이 데이터 오류 신고 및 처리 대장에 체계적으로 기록되었는지 확인.</li>
+                        <li>성과 평가 반영: 데이터 품질 진단·평가(예: 공공데이터 품질관리 수준평가) 결과에 따라 시정 조치 계획을 수립하고 이행했는지 확인.</li>
+                      </ul>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <p className="mt-4">비유적 설명: 정보시스템 감리사가 데이터 품질관리를 점검하는 것은 건물의 안전 진단과 같습니다. 건물을 짓기 전에 설계도(정책 및 표준)가 제대로 작성되었는지 확인하고(계획/구축), 건물이 사용되는 동안 구조적 결함(값 오류)이 발생했을 때 그 원인을 파악하여(운영/진단), 근본적인 보수 계획(개선 계획)을 수립하고 실행하며, 사용자들의 불편 신고(오류 신고)를 꾸준히 접수하고 처리하는지(활용) 전 과정을 면밀히 살피는 것입니다. 감리사는 단순히 외관이 깨끗한지 확인하는 것이 아니라, 건물의 기초 설계와 유지 관리 절차 자체가 법규와 기준(품질 지표)에 맞게 작동하는지 확인합니다.</p>
+          </div>
+        </ExpandableCard>
       </div>
     </div>
   );
