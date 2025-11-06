@@ -19,6 +19,22 @@ export default function About() {
 
       {/* Content Section */}
       <div className="space-y-8">
+        <div className="card-elevated p-8 border-l-4 border-green-500">
+          <h2 className="text-3xl font-bold mb-6 flex items-center gap-3">
+            <span className="text-3xl">🔗</span>
+            <span className="bg-gradient-to-r from-green-600 to-blue-600 bg-clip-text text-transparent">자료 출처</span>
+          </h2>
+          <div className="space-y-4 text-gray-600">
+            <div className="flex items-start gap-4 p-3 rounded-lg hover:bg-gray-50 transition-colors">
+              <span className="text-3xl flex-shrink-0">📄</span>
+              <div>
+                <a href="https://www.data.go.kr/bbs/rcr/selectRecsroom.do?pageIndex=1&originId=PDS_0000000000000516" target="_blank" rel="noopener noreferrer" className="text-lg text-blue-500 hover:underline">공공데이터 품질관리 매뉴얼 ver 2.1</a>
+                <p className="text-sm mt-1">공공데이터포털 자료실</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div className="card-elevated p-8 border-l-4 border-blue-500">
           <h2 className="text-3xl font-bold mb-6 flex items-center gap-3">
             <span className="text-3xl">🛠️</span>
@@ -89,25 +105,9 @@ export default function About() {
               <span className="text-2xl">🌐</span>
               <span className="text-gray-700">Client-side routing</span>
             </div>
-            <div class="flex items-center gap-3 p-3 rounded-lg bg-white shadow-sm">
-              <span class="text-2xl">📦</span>
-              <span class="text-gray-700">GitHub Pages ready</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="card-elevated p-8 border-l-4 border-green-500">
-          <h2 class="text-3xl font-bold mb-6 flex items-center gap-3">
-            <span class="text-3xl">🔗</span>
-            <span class="bg-gradient-to-r from-green-600 to-blue-600 bg-clip-text text-transparent">자료 출처</span>
-          </h2>
-          <div class="space-y-4 text-gray-600">
-            <div class="flex items-start gap-4 p-3 rounded-lg hover:bg-gray-50 transition-colors">
-              <span class="text-3xl flex-shrink-0">📄</span>
-              <div>
-                <a href="https://www.data.go.kr/bbs/rcr/selectRecsroom.do?pageIndex=1&originId=PDS_0000000000000516" target="_blank" rel="noopener noreferrer" class="text-lg text-blue-500 hover:underline">공공데이터 품질관리 매뉴얼 ver 2.1</a>
-                <p class="text-sm mt-1">공공데이터포털 자료실</p>
-              </div>
+            <div className="flex items-center gap-3 p-3 rounded-lg bg-white shadow-sm">
+              <span className="text-2xl">📦</span>
+              <span className="text-gray-700">GitHub Pages ready</span>
             </div>
           </div>
         </div>
