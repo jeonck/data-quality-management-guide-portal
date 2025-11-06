@@ -38,32 +38,67 @@ export default function Home() {
                     <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900" rowSpan={3}>I. 품질관리 기반 (Foundation)</td>
                     <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">정책 (Policy)</td>
                     <td className="px-6 py-4 text-sm text-gray-500">품질관리 활동을 위한 기관 차원의 원칙, 목적, 목표, 전략 등을 규정한 문서 수립 및 관리. 국가 정책과의 일관성 확보.</td>
-                    <td className="px-6 py-4 text-sm text-gray-500">품질관리 규정(지침), 품질관리 목적/목표/기준/절차 등 정의된 문서.</td>
+                    <td className="px-6 py-4 text-sm text-gray-500">
+                      <ul className="list-disc list-inside space-y-1">
+                        <li>품질관리 규정(지침)</li>
+                        <li>품질관리 목적/목표/기준/절차 등 정의된 문서.</li>
+                      </ul>
+                    </td>
                     <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500"></td>
                   </tr>
                   <tr>
                     <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">조직 (Organization)</td>
                     <td className="px-6 py-4 text-sm text-gray-500">품질관리 활동을 수행할 주체(Who), 역할 및 책임을 정의. 최고 경영층의 관심과 공감대 형성 중요.</td>
-                    <td className="px-6 py-4 text-sm text-gray-500">공공데이터제공책임관 및 실무담당자 임명. 품질관리 담당자, 오류신고 담당자 지정. 품질관리 협의회 구성 및 운영 (필요 시). 데이터 오너십 및 스튜어드십 정의.</td>
+                    <td className="px-6 py-4 text-sm text-gray-500">
+                      <ul className="list-disc list-inside space-y-1">
+                        <li>공공데이터제공책임관 및 실무담당자 임명.</li>
+                        <li>품질관리 담당자, 오류신고 담당자 지정.</li>
+                        <li>품질관리 협의회 구성 및 운영 (필요 시).</li>
+                        <li>데이터 오너십 및 스튜어드십 정의.</li>
+                      </ul>
+                    </td>
                     <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500"></td>
                   </tr>
                   <tr>
                     <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">인프라 (Infrastructure)</td>
                     <td className="px-6 py-4 text-sm text-gray-500">품질관리 활동의 효율적인 지원을 위한 도구 및 시스템 확보. (단계적 도입 권고).</td>
-                    <td className="px-6 py-4 text-sm text-gray-500">프로파일링 기능, 품질 데이터 관리 기능. 품질 진단/분석 기능. 메타데이터 관리 기능 (데이터 표준, 모델, DB 정의 내역 등).</td>
+                    <td className="px-6 py-4 text-sm text-gray-500">
+                      <ul className="list-disc list-inside space-y-1">
+                        <li>프로파일링 기능</li>
+                        <li>품질 데이터 관리 기능.</li>
+                        <li>품질 진단/분석 기능.</li>
+                        <li>메타데이터 관리 기능 (데이터 표준, 모델, DB 정의 내역 등).</li>
+                      </ul>
+                    </td>
                     <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500"></td>
                   </tr>
                   <tr>
                     <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900" rowSpan={4}>II. 생애주기별 활동 (Life Cycle)</td>
                     <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">1. 계획단계 (Planning)</td>
                     <td className="px-6 py-4 text-sm text-gray-500">기관의 중장기 로드맵에 따른 연간 품질관리 계획 수립. 중점 관리 대상 선정 및 품질 목표 정의.</td>
-                    <td className="px-6 py-4 text-sm text-gray-500">데이터 품질관리 계획서. 품질 목표 및 로드맵. 중점 품질관리 대상 DB 선정 결과. 품질 진단 및 개선 계획 (진단/개선 분리 수립 권고). 표준화 적용 및 연계 데이터 품질 확보 계획.</td>
+                    <td className="px-6 py-4 text-sm text-gray-500">
+                      <ul className="list-disc list-inside space-y-1">
+                        <li>데이터 품질관리 계획서.</li>
+                        <li>품질 목표 및 로드맵.</li>
+                        <li>중점 품질관리 대상 DB 선정 결과.</li>
+                        <li>품질 진단 및 개선 계획 (진단/개선 분리 수립 권고).</li>
+                        <li>표준화 적용 및 연계 데이터 품질 확보 계획.</li>
+                      </ul>
+                    </td>
                     <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500"></td>
                   </tr>
                   <tr>
                     <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">2. 구축단계 (Building)</td>
                     <td className="px-6 py-4 text-sm text-gray-500">데이터베이스 신규 도입/고도화 시 사전 예방적 품질관리 수행. 데이터 표준 준수 및 산출물 체계적 관리.</td>
-                    <td className="px-6 py-4 text-sm text-gray-500">데이터 표준 준수: 용어 정의서, 단어 정의서, 코드 정의서, 도메인 정의서. 데이터 구조: 논리/물리 데이터모델 다이어그램 (ERD). 시스템 구현: 테이블 정의서, 컬럼 정의서, 데이터베이스(DB) 정의서. 오류 데이터 입력 방지 로직 적용 여부. 연계 데이터 목록 및 정합성 관리 현황.</td>
+                    <td className="px-6 py-4 text-sm text-gray-500">
+                      <ul className="list-disc list-inside space-y-1">
+                        <li>데이터 표준 준수: 용어 정의서, 단어 정의서, 코드 정의서, 도메인 정의서.</li>
+                        <li>데이터 구조: 논리/물리 데이터모델 다이어그램 (ERD).</li>
+                        <li>시스템 구현: 테이블 정의서, 컬럼 정의서, 데이터베이스(DB) 정의서.</li>
+                        <li>오류 데이터 입력 방지 로직 적용 여부.</li>
+                        <li>연계 데이터 목록 및 정합성 관리 현황.</li>
+                      </ul>
+                    </td>
                     <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500"></td>
                   </tr>
                   <tr>
@@ -93,7 +128,13 @@ export default function Home() {
                   <tr>
                     <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">4. 활용단계 (Utilization)</td>
                     <td className="px-6 py-4 text-sm text-gray-500">데이터 활용 과정에서 발생하는 품질 이슈를 인지하고, 이를 개선 활동에 반영하는 선순환 체계 완성. 품질 오류 신고 관리 체계 구축.</td>
-                    <td className="px-6 py-4 text-sm text-gray-500">품질 오류 신고: 데이터 품질 오류 신고서. 데이터 오류 신고 및 처리 대장 (접수/처리 결과 기록). 품질 진단 및 평가 결과에 따른 시정 조치 계획 및 이행 실적.</td>
+                    <td className="px-6 py-4 text-sm text-gray-500">
+                      <ul className="list-disc list-inside space-y-1">
+                        <li>품질 오류 신고: 데이터 품질 오류 신고서.</li>
+                        <li>데이터 오류 신고 및 처리 대장 (접수/처리 결과 기록).</li>
+                        <li>품질 진단 및 평가 결과에 따른 시정 조치 계획 및 이행 실적.</li>
+                      </ul>
+                    </td>
                     <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500"></td>
                   </tr>
                 </tbody>
