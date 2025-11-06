@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    @apply bg-gradient-to-br from-gray-50 via-blue-50 to-purple-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 text-gray-800 dark:text-gray-200;
+    @apply bg-gradient-to-br from-gray-50 via-blue-50 to-purple-50 text-gray-800;
     font-feature-settings: 'kern' 1, 'liga' 1;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -34,11 +34,11 @@
   }
 
   .card-elevated {
-    @apply bg-white dark:bg-gray-800 rounded-xl shadow-md hover:shadow-xl transition-all duration-300;
+    @apply bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300;
   }
 
   .table-responsive {
-    @apply overflow-x-auto rounded-lg border border-gray-200 dark:border-gray-700;
+    @apply overflow-x-auto rounded-lg border border-gray-200;
   }
 
   .shadow-soft {
