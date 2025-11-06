@@ -20,37 +20,37 @@ export default function TimelinessDetail() {
             <table className="min-w-full divide-y divide-gray-200">
               <thead className="bg-gray-50">
                 <tr>
-                  <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                  <th scope="col" className="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider w-24">
                     구분
                   </th>
-                  <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                  <th scope="col" className="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                     실용적 예시 및 오류 유형
                   </th>
-                  <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                  <th scope="col" className="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                     개선 방향/진단 기준
                   </th>
                 </tr>
               </thead>
               <tbody className="bg-white divide-y divide-gray-200">
                 <tr>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
+                  <td className="px-4 py-4 text-sm font-medium text-gray-900">
                     응답 시간
                   </td>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-600">
+                  <td className="px-4 py-4 text-sm text-gray-600">
                     서비스 제공 기대 응답시간을 초과하여 제공됨.
                   </td>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-600">
+                  <td className="px-4 py-4 text-sm text-gray-600">
                     데이터에 대한 응답시간의 기준이 마련되어 있는지. <br/>응답시간 기준에 따라 주기적으로 성능을 측정하고 개선 활동을 수행하는지.
                   </td>
                 </tr>
                 <tr>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
+                  <td className="px-4 py-4 text-sm font-medium text-gray-900">
                     최신값
                   </td>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-600">
+                  <td className="px-4 py-4 text-sm text-gray-600">
                     데이터 최신값 오류 (예: 동사무소에서 주민정보 변경 이후 적용 기한이 지났어도 인터넷 증명서에는 변경 전 주민정보가 제공됨).
                   </td>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-600">
+                  <td className="px-4 py-4 text-sm text-gray-600">
                     주요 데이터의 갱신 주기와 방법이 문서화되어 있고 이를 준수하는지.
                   </td>
                 </tr>

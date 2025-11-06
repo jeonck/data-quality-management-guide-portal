@@ -20,48 +20,48 @@ export default function CompletenessDetail() {
             <table className="min-w-full divide-y divide-gray-200">
               <thead className="bg-gray-50">
                 <tr>
-                  <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                  <th scope="col" className="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider w-24">
                     구분
                   </th>
-                  <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                  <th scope="col" className="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                     실용적 예시 및 오류 유형
                   </th>
-                  <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                  <th scope="col" className="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                     개선 방향/진단 기준
                   </th>
                 </tr>
               </thead>
               <tbody className="bg-white divide-y divide-gray-200">
                 <tr>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
+                  <td className="px-4 py-4 text-sm font-medium text-gray-900">
                     논리 모델
                   </td>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-600">
+                  <td className="px-4 py-4 text-sm text-gray-600">
                     논리 모델의 엔터티 간 관계 설정(Cardinality, 기수성)이 부재하여 참조 관계가 명시적으로 표기되어 있지 않음.
                   </td>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-600">
+                  <td className="px-4 py-4 text-sm text-gray-600">
                     논리 데이터 모델이 엔터티, 속성, 관계정의와 더불어 식별자, 필수입력 항목 등이 정의된 상세 수준인지 확인.
                   </td>
                 </tr>
                 <tr>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
+                  <td className="px-4 py-4 text-sm font-medium text-gray-900">
                     식별자
                   </td>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-600">
+                  <td className="px-4 py-4 text-sm text-gray-600">
                     테이블에 데이터를 유일하게 구별할 수 있는 주 식별자(PK)가 미정의되어 데이터 중복이 발생함.
                   </td>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-600">
+                  <td className="px-4 py-4 text-sm text-gray-600">
                     엔터티 내 레코드를 유일하게 구분할 수 있는 식별자가 정의되었는지 확인.
                   </td>
                 </tr>
                 <tr>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
+                  <td className="px-4 py-4 text-sm font-medium text-gray-900">
                     물리 구조
                   </td>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-600">
+                  <td className="px-4 py-4 text-sm text-gray-600">
                     미사용 테이블/컬럼이 존재함. <br/>논리 모델에 'Not Null'로 정의된 필수 입력항목이 실제 DB에는 'Null'을 허용하도록 생성되거나 'Space'가 입력됨.
                   </td>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-600">
+                  <td className="px-4 py-4 text-sm text-gray-600">
                     물리 데이터 모델 설계도와 실제 데이터베이스 구조가 일치하는지 확인.
                   </td>
                 </tr>

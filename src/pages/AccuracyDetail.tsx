@@ -20,59 +20,59 @@ export default function AccuracyDetail() {
             <table className="min-w-full divide-y divide-gray-200">
               <thead className="bg-gray-50">
                 <tr>
-                  <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                  <th scope="col" className="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider w-24">
                     구분
                   </th>
-                  <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                  <th scope="col" className="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                     실용적 예시 및 오류 유형
                   </th>
-                  <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                  <th scope="col" className="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                     개선 방향/진단 기준
                   </th>
                 </tr>
               </thead>
               <tbody className="bg-white divide-y divide-gray-200">
                 <tr>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
+                  <td className="px-4 py-4 text-sm font-medium text-gray-900">
                     입력값
                   </td>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-600">
+                  <td className="px-4 py-4 text-sm text-gray-600">
                     오류 데이터 입력 방지를 위한 예방적 조치(검증 로직)가 시스템적으로 부재함. <br/>명칭 도메인에 한글 성명 컬럼에 비완성형 한글이나 숫자가 등록되는 사용자 입력 오류 발생.
                   </td>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-600">
+                  <td className="px-4 py-4 text-sm text-gray-600">
                     입력 단계에 데이터 검증 로직을 적용하고 보완하여 오류 발생을 사전 방지.
                   </td>
                 </tr>
                 <tr>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
+                  <td className="px-4 py-4 text-sm font-medium text-gray-900">
                     범위·형식
                   </td>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-600">
-                    날짜 도메인 컬럼이 DBMS가 지원하는 날짜 타입이 아닌 ‘문자’나 ‘숫자’ 타입으로 정의되어 유효하지 않은 날짜 값 (예: 2월 30일)이 저장됨. <br/>수량 도메인 컬럼에 음수(-) 값이 나올 수 없는 특성이 존재함에도 음수 값이 등록됨.
+                  <td className="px-4 py-4 text-sm text-gray-600">
+                    날짜 도메인 컬럼이 DBMS가 지원하는 날짜 타입이 아닌 '문자'나 '숫자' 타입으로 정의되어 유효하지 않은 날짜 값 (예: 2월 30일)이 저장됨. <br/>수량 도메인 컬럼에 음수(-) 값이 나올 수 없는 특성이 존재함에도 음수 값이 등록됨.
                   </td>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-600">
+                  <td className="px-4 py-4 text-sm text-gray-600">
                     테이블의 속성에 저장된 데이터가 도메인 표준에 따른 형식에 맞게 저장되었는지 확인.
                   </td>
                 </tr>
                 <tr>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
+                  <td className="px-4 py-4 text-sm font-medium text-gray-900">
                     업무규칙
                   </td>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-600">
+                  <td className="px-4 py-4 text-sm text-gray-600">
                     시간 순서 정확성 위배 (예: 착공일자가 준공일자보다 늦게 등록됨). <br/>근거 규정에 명시된 업무규칙(BR)이 시스템에 반영되지 않음 (예: 도로명주소법 시행령의 명명규칙 위배).
                   </td>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-600">
+                  <td className="px-4 py-4 text-sm text-gray-600">
                     업무규칙 정의서를 기반으로 데이터의 정확성을 검증하고 있는지. <br/>오류 데이터 발생 시 이를 보정하기 위한 명시적인 절차가 있는지.
                   </td>
                 </tr>
                 <tr>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
+                  <td className="px-4 py-4 text-sm font-medium text-gray-900">
                     참조관계
                   </td>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-600">
+                  <td className="px-4 py-4 text-sm text-gray-600">
                     테이블 간 참조 무결성 위배 (예: 부모 테이블에 존재하지 않는 값이 자식 테이블에 등록됨).
                   </td>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-600">
+                  <td className="px-4 py-4 text-sm text-gray-600">
                     데이터 간 종속관계나 참조관계가 있을 경우, DB에 제약 조건이 설정되거나 프로그램을 통해 검증하고 있는지.
                   </td>
                 </tr>
