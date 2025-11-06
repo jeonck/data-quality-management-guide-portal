@@ -197,7 +197,14 @@ export default function Home() {
                         <li>품질개선 추진계획서 작성 (범위, 일정, 예산, 기대 효과 포함).</li>
                       </ul>
                     </td>
-                    <td className="px-6 py-4 text-sm text-gray-500">개선 과제 정의 및 우선순위 선정 (시급성 및 중요도 고려). 개선 목표 및 성과평가지표(KPI) 설정. 개선 전략 수립 (데이터 중심/프로세스 중심). 품질개선 추진계획서 작성 (범위, 일정, 예산, 기대 효과 포함).</td>
+                    <td className="px-6 py-4 text-sm text-gray-500">
+                      <ul className="list-disc list-inside space-y-1">
+                        <li>개선 과제 정의 및 우선순위 선정 (시급성 및 중요도 고려).</li>
+                        <li>개선 목표 및 성과평가지표(KPI) 설정.</li>
+                        <li>개선 전략 수립 (데이터 중심/프로세스 중심).</li>
+                        <li>품질개선 추진계획서 작성 (범위, 일정, 예산, 기대 효과 포함).</li>
+                      </ul>
+                    </td>
                   </tr>
                   <tr>
                     <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">5. 개선 수행 (Implement)</td>
@@ -208,7 +215,13 @@ export default function Home() {
                         <li>보정 작업 시 롤백/리스토어를 위한 백업 및 이력 관리.</li>
                       </ul>
                     </td>
-                    <td className="px-6 py-4 text-sm text-gray-500">개선 환경 준비 및 협조 체계 구성 (특히 외부 기관 연계 시). 품질개선 수행 (데이터 보정, 데이터베이스 구조 보정, 응용 프로그램 수정). 보정 작업 시 롤백/리스토어를 위한 백업 및 이력 관리.</td>
+                    <td className="px-6 py-4 text-sm text-gray-500">
+                      <ul className="list-disc list-inside space-y-1">
+                        <li>개선 환경 준비 및 협조 체계 구성 (특히 외부 기관 연계 시).</li>
+                        <li>품질개선 수행 (데이터 보정, 데이터베이스 구조 보정, 응용 프로그램 수정).</li>
+                        <li>보정 작업 시 롤백/리스토어를 위한 백업 및 이력 관리.</li>
+                      </ul>
+                    </td>
                   </tr>
                   <tr>
                     <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">6. 품질 통제 (Control)</td>
@@ -219,7 +232,13 @@ export default function Home() {
                         <li>품질 통제 실시 (상시 모니터링, 오류 신고 접수/처리, 교육 및 변화관리 활동).</li>
                       </ul>
                     </td>
-                    <td className="px-6 py-4 text-sm text-gray-500">결과 평가 (개선 전/후 비교 및 비용 편익 분석을 통한 효과 정량적 평가). 품질 목표 관리 (품질 관리체계, 표준화, 데이터 보정 영역별 목표 설정 및 주기적 확인). 품질 통제 실시 (상시 모니터링, 오류 신고 접수/처리, 교육 및 변화관리 활동).</td>
+                    <td className="px-6 py-4 text-sm text-gray-500">
+                      <ul className="list-disc list-inside space-y-1">
+                        <li>결과 평가 (개선 전/후 비교 및 비용 편익 분석을 통한 효과 정량적 평가).</li>
+                        <li>품질 목표 관리 (품질 관리체계, 표준화, 데이터 보정 영역별 목표 설정 및 주기적 확인).</li>
+                        <li>품질 통제 실시 (상시 모니터링, 오류 신고 접수/처리, 교육 및 변화관리 활동).</li>
+                      </ul>
+                    </td>
                   </tr>
                 </tbody>
               </table>
